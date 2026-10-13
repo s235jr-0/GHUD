@@ -1,0 +1,11 @@
+# .NET build output: always rebuildable from source
+bin/
+obj/
+.vs/
+*.user
+TestResults/
+publish/
+
+# Local logs and notes that can contain personal paths: never commit them
+*.log
+CLAUDE.md

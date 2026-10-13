@@ -4,7 +4,7 @@ A modular mod manager: a rock-solid **core** that downloads, stages and deploys 
 any game, plus **game modules** that add each game's specifics. "General" covers games
 without a module (a niche or new game with a mods folder). GHUD is the parent app: the
 RimWorld Mod Manager's features become its RimWorld module. .NET 10 + Avalonia 12,
-Windows + Linux. Self-contained in this folder, ready to move to its own repository.
+Windows + Linux. Its own repository since 2026-10-13: https://github.com/s235jr-0/GHUD
 
 **Current version:** 0.4.0: the core and the RimWorld module now match the RimWorld Mod
 Manager (Steam Workshop through anonymous SteamCMD, session report, help bundle), plus a
@@ -42,9 +42,9 @@ basic, opt-in load order. Next: talk about what comes next (see Roadmap).
 - **Nexus links (`nxm://`):** GHUD owns them and installs into the matching game instance
   (the game is part of the link). The RimWorld manager stops registering for them.
 - **Download library:** next to staging, `<drive>\GHUD Staging\<instance>\downloads`.
-- **Own repository:** when GHUD is ready it moves to its own GitHub repository, separate
-  from the RimWorld Mod Manager. DownloadKit lives here (`src\DownloadKit.Core`); the
-  RimWorld manager keeps its own frozen copy. Everything GHUD needs is inside this folder.
+- **Own repository:** done 2026-10-13 (https://github.com/s235jr-0/GHUD), history kept.
+  DownloadKit lives here (`src\DownloadKit.Core`); the RimWorld Mod Manager keeps its own
+  frozen copy in its repository.
 
 ## Layout
 ```
@@ -170,7 +170,7 @@ non-MIT texts in `licenses\`. Builds copy `LICENSE`, the notices and `licenses\`
    - later, maybe: warnings (missing dependencies, incompatibilities, order violations)
 6. Before a first release: download queue (3 at once, resume, progress per item),
    drag-and-drop ordering, Linux test, release build script (single-file GHUD.exe +
-   LICENSE + notices + licenses), README user guide, then its own GitHub repository.
+   LICENSE + notices + licenses), README user guide, first GitHub release.
 7. Skyrim SE/AE + Fallout 4 module: `Data\` deploy, script extenders into the game folder,
    plugin list (`plugins.txt`) and its order, FOMOD installers.
 8. S.T.A.L.K.E.R. Anomaly module (gamedata priority, ModDB through the browser step).

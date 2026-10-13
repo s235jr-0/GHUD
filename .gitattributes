@@ -1,0 +1,12 @@
+# Shell scripts must keep Linux line endings or bash can't run them
+*.sh   text eol=lf
+# Windows scripts keep Windows line endings
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+
+# Binary files: never touch
+*.ico  binary
+*.png  binary
+*.zip  binary
+*.7z   binary
+*.rar  binary
